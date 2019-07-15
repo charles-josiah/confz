@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>totvs</short>
+  <description>Portas utilizadas para o servidor APP TOTVS</description>
+  <port protocol="tcp" port="80"/>
+  <port protocol="tcp" port="443"/>
+  <port protocol="tcp" port="7777"/>
+  <port protocol="tcp" port="8888"/>
+  <port protocol="tcp" port="8983"/>
+  <port protocol="tcp" port="15001-15002"/>
+</service>
