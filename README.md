@@ -1,0 +1,3 @@
+# Configuração de alguns serviços...
+
+- openvpn_auth_ldap_and_perl - configuração do openvpn no active directory via script perl
