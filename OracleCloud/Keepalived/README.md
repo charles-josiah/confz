@@ -20,10 +20,10 @@ Mas nem tudo são "flores":
 
 Porem, depois de muito teste, ajustes, suor, tudo foi ageitado e funciona perfeitamente. Vou deixar no git os arquivos como exemplo. E eventual duvida, favor entrar em contato.
 
-Diagrama basico da estrutura: 
+Diagrama basico/topologia da estrutura: 
 
 
 <p align="center">
-Topologia<br>
-<img  height="42" width="42" src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
+<br>
+<img  height="542" width="542" src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
 </p>
