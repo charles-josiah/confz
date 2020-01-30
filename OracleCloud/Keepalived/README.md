@@ -29,5 +29,5 @@ Diagrama basico/topologia da estrutura:
 </p>
 
 Obs:
- - com certeza existe melhoramento e melhores verões para esta demanda e configuração. 
+ - com certeza existe melhoramento e melhores versões para esta demanda e configuração. 
  Sugestões são bem vindas.
