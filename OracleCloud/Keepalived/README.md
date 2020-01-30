@@ -25,5 +25,5 @@ Diagrama basico da estrutura:
 
 <p align="center">
 Topologia<br>
-<img src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
+<img  height="42" width="42" src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
 </p>
