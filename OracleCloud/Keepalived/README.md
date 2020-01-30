@@ -27,3 +27,7 @@ Diagrama basico/topologia da estrutura:
 <br>
 <img  height="542" width="542" src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
 </p>
+
+Obs:
+ - com certeza existe melhoramento e melhores verões para esta demanda e configuração. 
+ Sugestões são bem vindas.
