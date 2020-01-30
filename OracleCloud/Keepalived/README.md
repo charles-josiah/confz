@@ -16,7 +16,7 @@ e muitas outras links e sites.
 
 Mas nem tudo são "flores": 
  - O problema encontramos algumas limitações e/ou bloqueios devido ao provedor ser no OracleCloud (não testamos na AWS/Azure/Google e outros). Sabemos que, o keepalived utiliza pacotes do tipo multicast e advertisements para determinar se o host esta UP ou Down. Esses pacotes são bloqueados dentro da rede do Oracle Cloud.
- - E outra segunda limitação que preciso "desasociar" o ip da interface do servidor master, associar no servidor slave; e vice versa. Um ifdown e ifup não resolve o problema.
+ - E outra segunda limitação, é preciso "desassociar" o IP da interface do servidor master e associar no servidor slave; e vice versa. A cada movimentação do IP dentro da estrutura. Bem diferente que o nosso habitual linux...
 
 Porem, depois de muito teste, ajustes, suor, tudo foi ageitado e funciona perfeitamente. Vou deixar no git os arquivos como exemplo. E eventual duvida, favor entrar em contato.
 
