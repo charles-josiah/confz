@@ -24,6 +24,6 @@ Diagrama basico da estrutura:
 
 
 <p align="center">
-Topologia Proposta<br>
-<img src="https://github.com/charles-josiah/">
+Topologia<br>
+<img src="https://raw.githubusercontent.com/charles-josiah/confz/master/OracleCloud/Keepalived/topologia-oracle-cloud-keepalived.png">
 </p>
