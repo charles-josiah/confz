@@ -1,6 +1,3 @@
-Author: Charles Josiah<br>
-Author: Jhonata Lamim - Eximio TI
-
 # Exemplo da aplicação do Keepalived no ambiente do Oracle Cloud
 
 Objetivo: 
@@ -31,3 +28,7 @@ Diagrama basico/topologia da estrutura:
 Obs:
  - com certeza existe melhoramento e melhores versões para esta demanda e configuração. <br>
  Sugestões são bem vindas.
+
+Autores:
+Author: Charles Josiah - https://www.linkedin.com/in/charlesjosiah/ <br>
+Author: Jhonata Lamim - http://www.lamimdba.com.br
