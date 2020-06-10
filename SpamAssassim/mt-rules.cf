@@ -2,7 +2,8 @@
 # Mantenedor: Charles Josiah
 # Autor: retirado de alguns sites da internet e outros escritos por mim.
 # Email: charles.alandt@gmail.com
-# Atualizado: 2020-01-12
+# Atualizado: 2020-01-12 
+#             2020-06-10 - add rule 14 - bloqueio de dominios io // ch // site
 
 describe BR_MT_01		MT - Odontologico +30.0
 describe BR_MT_02		MT - Caro Usuario +30.0
@@ -10,12 +11,14 @@ describe BR_MT_03		MT - Oncologia +30
 describe BR_MT_04		MT - Return-path +30
 describe BR_MT_05		MT - List Unsubscribe +30
 describe BR_MT_06		MT - Palavras do mal +30
+describe BR_MT_07		MT - Palavras do mal no cabecalho  antes do @ 
 describe BR_MT_08		MT - Golpe Santader WAY
 describe BR_MT_09		MT - SCAM - Conta comprometida
 describe BR_MT_10		MT - SCAM - Envio de Senha
 describe BR_MT_11		MT - Palavras do mal nos cabecalho apos o @
 describe BR_MT_12		MT - SCAM - ITAU 
 describe BR_MT_13		MT - SCAM - Bradesco
+describe BR_MT_14		MT - Dominio - io 
 
 header   BR_MT_01   Subject =~ /.*odont[o0].*/i
 score    BR_MT_01   30 
@@ -30,14 +33,13 @@ header	 BR_MT_04   ALL =~ /\bReturn-Path: <([^\r\n]{0,99})-([\w.]+)=([\w.-]{1,99
 score 	 BR_MT_04   300
 
 header   BR_MT_05   List-Unsubscribe[:] =~ /<mailto|http[s]:(?:leave-\S+|\S+-unsubscribe)\@\S+>$/
-score	   BR_MT_05   30
+score	 BR_MT_05   30
 
 header   BR_MT_06   Subject =~ /\b.*(?:kits*|trepe|touro|sexo|orgasmo|economizar|Personnalite|dom.nio.*congelado.*|ejacula...|p.nis|gel|masculino|amil|webmail|sulam.rica|whatsapp|mba|vinhos|natura|avianca|tam|gol|confira|ganhe|hospedagem|compre|divulgue|gr.{1,3}tis|gratu.{1,3}ta).*\b/i
 score    BR_MT_06   5
 
 header   BR_MT_07   ALL =~ /\b.*(send-.*|.{3}descontosaude|desconto-saude.*|whats.*|sulameric.*|root.*|root@|touro.*|www-data|smiles|return|bemvindo_*|bounce.*|bounc.*|bounce-mc.*|novidadescartaorenner|amil|mta.*|seguro.*).*@.*\b/i
 score    BR_MT_07   3
-describe BR_MT_07		MT - Palavras do mal no cabecalho  antes do @ 
 
 header   BR_MT_08  Subject =~ /\bsantander.*.way.*.cliente.*\b/i
 score    BR_MT_08  30
@@ -45,15 +47,21 @@ score    BR_MT_08  30
 header	 BR_MT_09  Subject =~ /\b.*(change .{1,4} password|.odulo de .egura..a|.our .ccount has been hacked|.lerta de .egura|.ua conta foi .omprometida).*\b/i
 score    BR_MT_09  30
 
+
 header   BR_MT_10  Subject =~ /\b.*Envio.de.senha.*\b/i
-score	   BR_MT_10  3
+score	 BR_MT_10  3
 
 header   BR_MT_11  ALL =~ /\b.*@.*(send-.*|.{3}descontosaude.*|desconto-saude.*|soscarteiras.*|whats.*|sulameric.*|root|touro.*|www-data|smiles|return|bemvindo_*|bounce.*|novidadescartaorenner|amil|mta.*|seguro.*|leads.*|aajcd.com|appseguranca.*).*\b/i
-score    BR_MT_11  5
+score    BR_MT_11 5
 
 header   BR_MT_12  Subject =~ /\b.*.tualiza..o.de..eguran.a.*\b/i
-score	  BR_MT_12  30
+score	 BR_MT_12  30
 
 
 header   BR_MT_13  Subject =~ /\b.*.abela.*.202..*\b/i
-score	   BR_MT_13  30
+score	 BR_MT_13  30
+
+header   BR_MT_14  From   =~ /@[a-z0-9\-\.]+\.(io|ch|site)/i
+score    BR_MT_14  30 
+
+
