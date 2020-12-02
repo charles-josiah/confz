@@ -3,6 +3,8 @@
 # by Charles Josiah
 # 02/12/2020
 # Obs: ajustar interfaes/ips somente um exemplo
+# iptables-restore < unifi-firewall-rules #inicia o firewall em memoria
+
 
 *filter
 :INPUT DROP [0:0]
