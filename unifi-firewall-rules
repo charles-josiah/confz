@@ -1,0 +1,26 @@
+###########################
+# Firewall basico para utilizar junto com  Unifi Controller
+# by Charles Josiah
+# 02/12/2020
+# Obs: ajustar interfaes/ips somente um exemplo
+
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [558:62540]
+:LOGGING - [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -s 127.0.0.0/8 -d 127.0.0.0/8 -i lo -j ACCEPT
+-A INPUT -i eth0 -p icmp -m icmp --icmp-type 8 -j ACCEPT
+#-A INPUT -s 192.168.0.162 -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 8080 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 8081 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 8443 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 8880 -j ACCEPT
+-A INPUT -i eth0 -p tcp -m tcp --dport 8843 -j ACCEPT
+-A INPUT -i eth0 -p udp -m udp --dport 3478 -j ACCEPT
+-A INPUT -j LOGGING
+-A LOGGING -m limit --limit 2/min -j LOG --log-prefix "IPTables-Dropped: "
+-A LOGGING -j DROP
+COMMIT
