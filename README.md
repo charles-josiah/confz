@@ -6,4 +6,4 @@
 - fail2ban - personalizado filter e action para Zimbra e lista permante de bloqueios.
 - OracleCloud - Keepalived - Exemplo da aplicação do Keepalived no ambiente do Oracle Cloud
 - syslog-ng - Exemplo do syslog-ng, separação dos logs recebidos via UDP por arquivos nomeados pelo endereço IP do emissor.
-- unifi- Firewall basico para utilizar junto com  Unifi Controller
+- unifi-firewall-rules.iptables - Firewall basico para utilizar junto com  Unifi Controller
