@@ -35,3 +35,4 @@ location /api/user {
 All requests are directed to a reverse proxy and respond with generic API content. 
 Adjust the configurations to suit your specific requirements.
 
+
