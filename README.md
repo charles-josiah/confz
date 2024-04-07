@@ -25,3 +25,6 @@ This repository contains various configurations for different purposes. Each dir
 
 - **NGINX Rate Limit:**
   - Sample NGINX setup demonstrating rate limiting.
+ 
+- **GCloud - Sample HTTP Load Balance**
+  - Sample HTTP Load Balance on Google Cloud  
